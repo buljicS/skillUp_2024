@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+}
+
+.logo img{
+    width: 50px;
+    height: auto;
+}
+
+.nav-header {
+    display: flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background: #3A4D39;
+}
+
+.upper-header {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-header a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFF;
+    margin: 0%;
+    font-family: "Itim", cursive;
+}
+
+.nav-header a:hover{
+    color: #ECE3CE;;
+}
+
+.kontakt_text{
+    display: flex;
+    padding: 100px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: url(https://img.freepik.com/free-photo/office-desktop-with-laptop-business-man_23-2148174087.jpg?t=st=1708717133~exp=1708720733~hmac=23290080bcb2b04973374230e64ea8bc9088fb91d3317990594d540f2c4db764&w=1380);
+    background-repeat: no-repeat;
+    justify-content: center;
+    
+}
+
+.kontakt_text h1{
+    color: white;
+    font-family: "Itim", cursive;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.kontakt_text p{
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    max-width: 1351px;
+    font-size: 24px;
+}
+
+.komentari_box{
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: #4F6F52;
+    justify-content: center;
+}
+
+.kartice_kontakt{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.kartica{
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    background: #FFF;
+    width: 245px;
+}
+
+.kontakt_kartica_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.kontakt_kartica_text h3{
+    color: #3A4D39;
+    font-size: 20px;
+    font-family: "Itim", cursive;
+    margin: 0%;
+}
+
+.kontakt_kartica_text p{
+    color: #739072;
+    font-size: 16px;
+    font-family: "Oxygen", sans-serif;
+    margin: 0%;
+}
+
+.komentar{
+    display: flex;
+    padding: 20px 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+    justify-content: center;
+    background: #FFF;
+}
+
+.komentar h2{
+    color: #3A4D39;
+    font-size: 32px;
+    margin: 0%;
+    font-family: "Itim", cursive;
+}
+
+.input_komentari{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.input_komentar{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchbar{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border: #000 1px solid;
+    border-radius: 10px;
+    border: 1px solid #4F6F52;
+    width: 280px;
+}
+ 
+input.Poruka{
+    border: none;
+    outline: none;
+    padding: 5px 450px 200px 10px;
+    border: #000 1px solid;
+    border-radius: 10px;
+    border: 1px solid #4F6F52;
+    text-align: start;
+}
+.search:hover{
+    cursor: pointer;
+}
+  
+.search input{
+    width: 300px;
+    background-color: white;
+    color: #739072;
+}
+
+::placeholder{
+    color: #739072;
+}
+
+.dugme_posalji{
+    display: flex;
+    padding: 8px 50px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: #3A4D39;
+    color: white;
+    border: none;
+}
+
+.dugme_posalji:hover{
+    background: #4F6F52;
+    color: white;
+    cursor: pointer;
+}

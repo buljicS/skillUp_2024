@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h2>Hi admin</h2>
+    
 </body>
 
 </html>
