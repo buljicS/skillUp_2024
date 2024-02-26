@@ -43,8 +43,8 @@
     <h2>Projekti</h2>
     <div class="cols">
       <div class="col" ontouchstart="this.classList.toggle('hover');">
-        <div class="container">
-          <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+        <div class="container">ž
+          <img src="assets/site_pics/logo.svg" alt="">
             <div class="inner">
               <p>Diligord</p>
               <span>Lorem ipsum</span>
