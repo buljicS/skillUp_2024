@@ -1,14 +1,11 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 body {
     margin: 0;
 }
 
-/* Header */
+.logo img {
+    width: 50px;
+    height: auto;
+}
 
 .nav-header {
     display: flex;
@@ -31,133 +28,179 @@ body {
     font-size: 20px;
     color: #FFF;
     margin: 0%;
-}
-
-/* Hero */
-
-.carusel {
-    width: 100%;
-    min-height: 450px;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-}
-
-.carusel-item {
-    overflow: hidden;
-    position: relative;
-    flex: 1;
-    transition-duration: 1s;
-    min-height: 450px;
-}
-
-.carusel-item:hover {
-    flex: 5;
-}
-
-.carusel-item>img {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition-delay: 500ms;
-    transition-duration: 1s;
-}
-
-.carusel-item:hover>img {
-    filter: grayscale(0%);
-}
-
-.carusel-text {
-    position: absolute;
-    height: 100%;
-    padding: 32px;
-    box-sizing: border-box;
-    left: -100%;
-    color: #3A4D39;
-    width: 350px;
-    opacity: 0;
-    background: white;
-    transition: 500ms;
-    display: flex;
-    flex-direction: column;
-    align-self: start;
-}
-
-.carusel-item:hover .carusel-text {
-    left: 0%;
-    opacity: 1;
-}
-
-.carusel-text h1 {
-    font-size: 28px;
-    letter-spacing: 2px;
-    word-spacing: 1px;
-    font-variant: small-caps;
     font-family: "Itim", cursive;
 }
 
-.carusel-text p {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.5;
-    font-family: "Oxygen", sans-serif;
+.nav-header a:hover {
+    color: #ECE3CE;
+    ;
 }
 
-.carusel-text a {
-    margin-top: auto;
-    padding: 10px 25px;
-    border: white solid 1px;
-    color: white;
-    text-decoration: none;
-    width: fit-content;
-    font-size: 16px;
-    font-weight: 500;
-    transition: 500ms;
-    position: relative;
-    overflow: hidden;
-    z-index: 3;
-}
-
-.carusel-text a:hover {
-    color: #020202;
-}
-
-.carusel-text a::before {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    left: 0%;
-    top: 0%;
-    width: 0%;
-    background: white;
-    z-index: -1;
-    transition: 500ms;
-}
-
-.carusel-text a:hover::before {
+/* Override UGG site */
+#main {
     width: 100%;
+    padding: 0;
 }
 
-/* Projekti */
+.content-asset p {
+    margin: 0 auto;
+}
 
-.wrapper h1 {
+.breadcrumb {
+    display: none;
+}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+.margin-bot-10 {
+    padding-bottom: 10px;
+}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {
+    font-family: "Oxygen", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+#parallax-world-of-ugg h2 {
+    font-family: "Itim", cursive;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: .9;
+}
+
+#parallax-world-of-ugg h3 {
+    font-family: "Oxygen", sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#parallax-world-of-ugg p {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.first-character {
+    font-weight: 400;
+    float: left;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.sc {
+    color: #4F6F52;
+}
+
+.ny {
+    color: #3d3c3a;
+}
+
+.atw {
+    color: #c48660;
+}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {
+    background: white;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#parallax-world-of-ugg .title h1 {
+    font-size: 35px;
+    letter-spacing: 8px;
+}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {
+    background: white;
+    padding: 60px;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#parallax-world-of-ugg .block-gray {
+    background: #f2f2f2;
+    padding: 60px;
+}
+
+#parallax-world-of-ugg .section-overlay-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.70;
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(https://img.freepik.com/free-photo/female-hands-typing-computer-keyboard_1303-27358.jpg?t=st=1708695580~exp=1708699180~hmac=cdf3819e5a14b32f3203fdecd8bbce04cb40dfc54ba86c5b43718cc2fc07c7c0&w=1380);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {
+    border-bottom: 1px solid black;
+    width: 150px;
+    margin: 0 auto;
+}
+
+h1 {
     font-size: 2.5rem;
     font-family: "Itim", cursive;
     font-weight: normal;
-    color: white;
+    color: #3A4D39;
     text-align: center;
     margin: 2rem 0;
 }
 
 .wrapper {
     margin: 0 auto;
-    background: #4F6F52;
+    background-color: #ECE3CE;
+    ;
     padding: 20px 210px 50px 210px;
 }
 
@@ -317,8 +360,6 @@ body {
     }
 }
 
-/* Objava */
-
 .objava {
     display: flex;
     justify-content: center;
@@ -376,52 +417,100 @@ body {
     font-family: "Oxygen", sans-serif;
 }
 
-.objava img {
-    width: 659px;
-    height: 500px;
+.komentari_box {
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: #4F6F52;
+    justify-content: center;
 }
 
-/* Tajmer */
-
-.tajmer {
-    color: #333;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px;
+.komentar {
+    display: flex;
+    padding: 20px 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+    justify-content: center;
+    background: #FFF;
 }
 
-.tajmer h1 {
-    font-weight: normal;
-    letter-spacing: .125rem;
-    text-transform: uppercase;
+.komentar h2 {
+    color: #3A4D39;
+    font-size: 32px;
+    margin: 0%;
     font-family: "Itim", cursive;
 }
 
-li {
-    display: inline-block;
-    font-size: 1.5em;
-    list-style-type: none;
-    padding: 1em;
-    text-transform: uppercase;
-    font-family: "Oxygen", sans-serif;
+.input_komentari {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
 }
 
-li span {
-    display: block;
-    font-size: 4.5rem;
+.input_komentar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.emoji {
-    display: none;
-    padding: 1rem;
+.searchbar {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border: #000 1px solid;
+    border-radius: 10px;
+    border: 1px solid #4F6F52;
+    width: 280px;
 }
 
-.emoji span {
-    font-size: 4rem;
-    padding: 0 .5rem;
+input.Poruka {
+    border: none;
+    outline: none;
+    padding: 5px 450px 200px 10px;
+    border: #000 1px solid;
+    border-radius: 10px;
+    border: 1px solid #4F6F52;
+    text-align: start;
 }
 
-/* Footer */
+.search:hover {
+    cursor: pointer;
+}
+
+.search input {
+    width: 300px;
+    background-color: white;
+    color: #739072;
+}
+
+::placeholder {
+    color: #739072;
+}
+
+.dugme_posalji {
+    display: flex;
+    padding: 8px 50px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: #3A4D39;
+    color: white;
+    border: none;
+}
+
+.dugme_posalji:hover {
+    background: #4F6F52;
+    color: white;
+    cursor: pointer;
+}
 
 footer {
     display: flex;
@@ -449,6 +538,7 @@ footer {
 .footerdole p {
     color: #FFF;
     font-size: 16px;
+    font-family: "Oxygen", sans-serif;
 }
 
 .stranicefooter {
@@ -461,19 +551,13 @@ footer {
     color: white;
     font-size: 16px;
     text-decoration: none;
+    font-family: "Itim", cursive;
 }
 
 .stranicefooter a:hover {
     text-decoration: underline;
 }
 
-.carousel {
-    background: url("../assets/site_pics/komentari.png");
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    margin: 0 auto;
-}
 
 /* Media Queries */
 /**************************/
@@ -499,6 +583,7 @@ footer {
         justify-content: center;
         align-items: center;
         border-radius: 24px;
+
     }
 
     .objava_text {
@@ -539,6 +624,43 @@ footer {
         padding: 0px;
     }
 
+    .komentar {
+        background: none;
+    }
+
+    .komentar h2 {
+        color: white;
+    }
+
+    .search input {
+        background-color: #4F6F52;
+    }
+
+    .searchbar {
+        border: 1px solid white;
+    }
+
+    input.Poruka {
+        border: 1px solid white;
+    }
+
+    .search input {
+        background-color: #739072;
+        color: white;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    input.searchbar {
+        background-color: #4F6F52;
+    }
+
+    input.Poruka {
+        background-color: #4F6F52;
+    }
+
     .wrapper {
         padding: 50px 0px;
     }
@@ -547,22 +669,41 @@ footer {
         width: 560px;
         height: auto;
     }
+
+    .dugme_posalji {
+        background: #ECE3CE;
+        color: #4F6F52;
+    }
+
+    .dugme_posalji:hover {
+        background: #3A4D39;
+        color: white;
+    }
+
 }
 
+@media screen and (max-width: 700px) {
+    .input_komentari {
+        flex-direction: column;
+    }
+
+    .input_komentar {
+        flex-direction: column;
+    }
+
+    .komentar {
+        gap: 30px;
+    }
+
+    input.Poruka {
+        padding: 5px 10px 200px 10px;
+        width: 280px;
+    }
+
+}
+
+
 @media screen and (max-width: 767px) {
-    .tajmer h1 {
-        font-size: calc(1.5rem * var(--smaller));
-    }
-
-    li {
-        font-size: calc(1.125rem * var(--smaller));
-    }
-
-    li span {
-        font-size: calc(3.375rem * var(--smaller));
-    }
-
-
     .col {
         width: 100%;
         margin: 50px;
@@ -612,5 +753,3 @@ footer {
         width: 290px;
     }
 }
-
-@media all and (max-width: 768px) {}
