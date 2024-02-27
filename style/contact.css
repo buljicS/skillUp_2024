@@ -248,12 +248,17 @@ footer {
     flex-direction: column;
 }
 
+.kartica{
+    justify-content: center;
+}
+
 .komentar {
     background: none;
 }
 
 .komentar h2 {
     color: white;
+    text-align: center;
 }
 
 .search input {
