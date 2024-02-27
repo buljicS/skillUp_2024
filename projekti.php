@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/projekti.css">
     <title>Projeti</title>
 </head>
 
@@ -28,11 +28,11 @@
         </div>
 
         <div class="nav-header">
-            <a href="#">Naslovna</a>
-            <a href="#">O nama</a>
+            <a href="index.php">Naslovna</a>
+            <a href="o-nama.php">O nama</a>
             <a href="#">Projekti</a>
-            <a href="#">Blog</a>
-            <a href="#">Kontakt</a>
+            <a href="blog.php">Blog</a>
+            <a href="contact.php">Kontakt</a>
         </div>
     </header>
 

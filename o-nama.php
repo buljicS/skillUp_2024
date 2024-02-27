@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="blog_style.css">
+    <link rel="stylesheet" href="./style/onama.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -34,11 +33,11 @@
     </div>
   
     <div class="nav-header">
-      <a href="#">Naslovna</a>
+      <a href="index.php">Naslovna</a>
       <a href="#">O nama</a>
-      <a href="#">Projekti</a>
-      <a href="#">Blog</a>
-      <a href="#">Kontakt</a>
+      <a href="projekti.php">Projekti</a>
+      <a href="blog.php">Blog</a>
+      <a href="contact.php">Kontakt</a>
     </div>
   </header>
 
@@ -125,7 +124,22 @@
       </div>
     </div>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./script.js"></script>
+    <footer>
+    <img class="slika" src="assets/site_pics/logo.svg" alt="">
+    <div class="footerdole">
+      <p>Copyright@Team3</p>
+  
+      <div class="stranicefooter">
+        <a href="#">Naslovna</a>
+        <a href="#">O nama</a>
+        <a href="#">Projekti</a>
+        <a href="#">Blog</a>
+        <a href="#">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script><script  src="./js/onama.js"></script>
 
 </body>
 </html>

@@ -37,11 +37,11 @@
         </div>
 
         <div class="nav-header">
-            <a href="#">Naslovna</a>
-            <a href="#">O nama</a>
-            <a href="#">Projekti</a>
+            <a href="index.php">Naslovna</a>
+            <a href="o-nama.php">O nama</a>
+            <a href="projekti.php">Projekti</a>
             <a href="#">Blog</a>
-            <a href="#">Kontakt</a>
+            <a href="contact.php">Kontakt</a>
         </div>
     </header>
 

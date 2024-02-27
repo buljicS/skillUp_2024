@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Kontakt</title>
 </head>
 
@@ -28,10 +31,10 @@
         </div>
 
         <div class="nav-header">
-            <a href="#">Naslovna</a>
-            <a href="#">O nama</a>
-            <a href="#">Projekti</a>
-            <a href="#">Blog</a>
+            <a href="index.php">Naslovna</a>
+            <a href="onama.php">O nama</a>
+            <a href="projekti.php">Projekti</a>
+            <a href="blog.php">Blog</a>
             <a href="#">Kontakt</a>
         </div>
     </header>
