@@ -685,6 +685,36 @@ footer {
         color: white;
     }
 
+    footer {
+        align-items: center;
+    }
+
+    .slika {
+        padding: 0px;
+    }
+
+    div.stranicefooter {
+        padding-bottom: 20px;
+    }
+
+
+    .footerdole {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border-top: none;
+    }
+
+    .footerdole p {
+        padding-top: 10px;
+        padding-left: 0px;
+        border-top: 1px solid white;
+    }
+
+    .stranicefooter {
+        flex-direction: column;
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width: 700px) {

@@ -449,6 +449,7 @@ footer {
 .footerdole p {
     color: #FFF;
     font-size: 16px;
+    font-family: "Oxygen", sans-serif;
 }
 
 .stranicefooter {
@@ -461,6 +462,7 @@ footer {
     color: white;
     font-size: 16px;
     text-decoration: none;
+    font-family: "Oxygen", sans-serif;
 }
 
 .stranicefooter a:hover {
@@ -542,7 +544,37 @@ padding: 20px 0px;
 .objava img{
     width: 560px;
     height: auto;
-}  
+}
+
+footer{
+    align-items: center;
+}
+        
+.slika{
+    padding: 0px;
+}
+
+div.stranicefooter {
+    padding-bottom: 20px;
+}
+
+        
+.footerdole{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+}
+        
+.footerdole p{
+    padding-top: 10px;
+    padding-left: 0px;
+    border-top: 1px solid white;
+}
+        
+.stranicefooter{
+    flex-direction: column;
+    padding: 0px;}
 }
 
 @media screen and (max-width: 767px) {

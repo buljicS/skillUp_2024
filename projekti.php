@@ -140,6 +140,21 @@
         </div>
     </div>
 
+    <footer>
+    <img class="slika" src="assets/site_pics/logo.svg" alt="">
+    <div class="footerdole">
+      <p>Copyright@Team3</p>
+  
+      <div class="stranicefooter">
+        <a href="#">Naslovna</a>
+        <a href="o-nama.php">O nama</a>
+        <a href="projekti.php">Projekti</a>
+        <a href="blog.php">Blog</a>
+        <a href="contact.php">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
     <script src="./script.js"></script>
 </body>

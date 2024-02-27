@@ -56,7 +56,7 @@
     <div class="cols">
               <div class="col" ontouchstart="this.classList.toggle('hover');">
                   <div class="container">
-                      <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+                      <div class="front" style="background-image: url(https://img.freepik.com/free-photo/front-view-woman-carrying-groceries-tote-bag_23-2149410878.jpg?t=st=1708996872~exp=1709000472~hmac=61f201cfa4c0995cee8e067b6355e9e521a2048c4ff5b39664c56c5546f55b73&w=1380)">
                           <div class="inner">
                               <p>Odgovorna potrošnja</p>
                           </div>
@@ -71,7 +71,7 @@
 
               <div class="col" ontouchstart="this.classList.toggle('hover');">
                   <div class="container">
-                      <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+                      <div class="front" style="background-image: url(https://img.freepik.com/free-photo/save-world-ecology-environmental-conservation-perforated-paper-recycle_53876-31051.jpg?t=st=1708997112~exp=1709000712~hmac=10bb3569d30d1907699211dfc59a834a14e61aa413df5ac5725c931ad7cf7d2a&w=996)">
                           <div class="inner">
                               <p>Reciklaža i minimiziranje otpada</p>
                           </div>
@@ -86,7 +86,7 @@
 
               <div class="col" ontouchstart="this.classList.toggle('hover');">
                   <div class="container">
-                      <div class="front" style="background-image: url(https://unsplash.it/502/502/)">
+                      <div class="front" style="background-image: url(https://img.freepik.com/free-photo/person-helping-their-neighbors-with-food_23-2149139738.jpg?t=st=1708997181~exp=1709000781~hmac=20c92733a3c0be178cecabb144405893aaccb119bdc7571e24bd8f76016e417a&w=1380)">
                           <div class="inner">
                               <p>Usklađivanje kupaca i prodavaca</p>
                           </div>
@@ -101,7 +101,7 @@
 
               <div class="col" ontouchstart="this.classList.toggle('hover');">
                   <div class="container">
-                      <div class="front" style="background-image: url(https://unsplash.it/503/503/)">
+                      <div class="front" style="background-image: url(https://img.freepik.com/free-photo/wind-turbines-grassy-globe_1048-10535.jpg?t=st=1708997232~exp=1709000832~hmac=0000891c166daa48e11ce2f637d93b2f59b13ac96cc06e0d81e68a29e1690f6d&w=826)">
                           <div class="inner">
                               <p>Zaštita vazduha</p>
                           </div>
@@ -135,7 +135,7 @@
     <div class="cols">
               <div class="col" ontouchstart="this.classList.toggle('hover');">
                   <div class="container">
-                      <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+                      <div class="front" style="background-image: url(https://img.freepik.com/free-photo/earth-day-campaign-hand-showing-tree-bubble-media-mix_53876-104084.jpg?t=st=1708997261~exp=1709000861~hmac=ab85aa12db5f98bd501a4655d04691858cc1b43a3443ec6b4e1621c064fc2001&w=740)">
                           <div class="inner">
                               <p>Marko Obrenović</p>
                 <span>Beograd</span>
@@ -223,10 +223,10 @@
   
       <div class="stranicefooter">
         <a href="#">Naslovna</a>
-        <a href="#">O nama</a>
-        <a href="#">Projekti</a>
-        <a href="#">Blog</a>
-        <a href="#">Kontakt</a>
+        <a href="o-nama.php">O nama</a>
+        <a href="projekti.php">Projekti</a>
+        <a href="blog.php">Blog</a>
+        <a href="contact.php">Kontakt</a>
       </div>
     </div>
   </footer>
