@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/blog.css">
     <title>Blog</title>
 </head>
@@ -150,12 +151,15 @@
             <h2>Napiši svoj komentar:</h2>
             <div class="input_komentari">
                 <div class="input_komentar">
-                    <input class="searchbar" type="text" placeholder="Vaše ime:" title="Search">
-                    <input class="searchbar" type="text" placeholder="Broj telefona:" title="Search">
+                    <input class="searchbar" type="text" placeholder="Vaše ime:" title="Ime">
+                    <input class="searchbar" type="text" placeholder="Vaše prezime:" title="Prezime">
                 </div>
                 <div class="input_komentar">
-                    <input class="searchbar" type="text" placeholder="Email adresa:" title="Search">
+                    <input class="searchbar" type="text" placeholder="Email adresa:" title="Mejl">
                     <input class="searchbar" type="text" placeholder="Tema:" title="Search">
+                </div>
+                <div class="w-100">
+                    <input class="form-control" type="file" name="blog_photo" id="formFile">
                 </div>
                 <input class="Poruka" type="text" placeholder="Poruka:" title="Search">
                 <button class="dugme_posalji">Pošalji</button>
@@ -177,7 +181,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
