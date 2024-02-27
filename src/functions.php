@@ -2,6 +2,12 @@
 
 require_once '../conf/config.php';
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+
+
 function connectDatabase(string $dsn, array $pdoOptions): PDO
 {
 
@@ -26,4 +32,49 @@ function insertNewComment(array $commentData): bool
     $stmt->bindValue(":comment", $commentData['comment'], PDO::PARAM_STR);
     $isDone = $stmt->execute();
     return $isDone;
+}
+
+function insertNewBlog(array $blog_data): bool
+{
+    $sql = "INSERT INTO blogs (user_fname, user_lname, user_email, blog_photo, blog_title, blog_content) VALUES (:user_fname, :user_lname, :user_email, :blog_photo, :blog_title, :blog_content)";
+    $stmt = $GLOBALS['pdo']->prepare($sql);
+    $stmt->bindValue(":user_fname", $blog_data['user_fname'], PDO::PARAM_STR);
+    $stmt->bindValue(":user_lname", $blog_data['user_lname'], PDO::PARAM_STR);
+    $stmt->bindValue(":user_email", $blog_data['user_email'], PDO::PARAM_STR);
+    $stmt->bindValue(":blog_photo", $blog_data['blog_photo'], PDO::PARAM_STR);
+    $stmt->bindValue(":blog_title", $blog_data['blog_title'], PDO::PARAM_STR);
+    $stmt->bindValue(":blog_content", $blog_data['blog_content'], PDO::PARAM_STR);
+    $isDone = $stmt->execute();
+    return $isDone;
+}
+
+function readAllBlogs(): array
+{
+    $sql = "SELECT * FROM blogs";
+    $stmt = $GLOBALS['pdo']->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function readActiveBlogs(): array
+{
+    $sql = "SELECT * FROM blogs WHERE is_approved = 1";
+    $stmt = $GLOBALS['pdo']->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function sendEmail(): bool
+{
+    $mail = new PHPMailer(true);
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host = 'smtp.gmail.com';                             //Set the SMTP server to send through
+    $mail->SMTPAuth = true;                                     //Enable SMTP authentication
+    $mail->Username = 'username';                               //SMTP username
+    $mail->Password = 'yourWebServePassword';                   //SMTP password
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
+
+    return true;
 }

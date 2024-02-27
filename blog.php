@@ -22,7 +22,7 @@
     <header>
         <div class="upper-header">
             <div class="logo">
-                <img src="img/Logo.png" alt="languages" width="38" height="auto">
+                <img src="./images/Logo.png" alt="languages" width="38" height="auto">
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -130,41 +130,6 @@
             </div>
         </div>
     </div>
-    </div>
-
-    <div class="objava">
-        <img src="img/Objava.png" alt="">
-        <div class="objava_text">
-            <div class="objava_info">
-                <h1>Podrška ekološkim projektima: Važnost akcije</h1>
-                <p>Ovo je fantastičan projekat sa snažnim ekološkim fokusom! Važno je podržati inicijative koje promovišu očuvanje životne sredine i pozitivno utiču na našu planetu. Svaka akcija koja doprinosi očuvanju prirode zaslužuje podršku i divljenje. Bravo za ideju i trud uložen u ovaj projekat!</p>
-            </div>
-            <div class="objava_autor">
-                <p class="Objava_ime">Milica Tomić</p>
-                <p class="lokacija">Kraljevo</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="komentari_box">
-        <div class="komentar">
-            <h2>Napiši svoj komentar:</h2>
-            <div class="input_komentari">
-                <div class="input_komentar">
-                    <input class="searchbar" type="text" placeholder="Vaše ime:" title="Ime">
-                    <input class="searchbar" type="text" placeholder="Vaše prezime:" title="Prezime">
-                </div>
-                <div class="input_komentar">
-                    <input class="searchbar" type="text" placeholder="Email adresa:" title="Mejl">
-                    <input class="searchbar" type="text" placeholder="Tema:" title="Search">
-                </div>
-                <div class="w-100">
-                    <input class="form-control" type="file" name="blog_photo" id="formFile">
-                </div>
-                <input class="Poruka" type="text" placeholder="Poruka:" title="Search">
-                <button class="dugme_posalji">Pošalji</button>
-            </div>
-        </div>
     </div>
 
     <footer>

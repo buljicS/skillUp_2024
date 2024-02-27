@@ -4,7 +4,7 @@ const PARAMS = [
     "HOST" => 'localhost',
     "USER" => 'root',
     "PASSWORD" => '',
-    "DB" => 'api',
+    "DB" => 'zajedno_za_zemlju',
     "CHARSET" => 'utf8mb4'
 ];
 
