@@ -1,6 +1,7 @@
 <?php
 
 require_once '../conf/config.php';
+require '../vendor/autoload.php';
 
 use Exception as GlobalException;
 use PHPMailer\PHPMailer\PHPMailer;

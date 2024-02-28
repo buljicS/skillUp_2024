@@ -139,7 +139,7 @@
                 <h1>Podelite svoje ideje za ekološki projekat s nama</h1>
                 <p>Ako imate ideju za ekološki projekat, pozivamo vas da je podelite s nama! Verujemo da zajedničkim snagama možemo napraviti veliku razliku u očuvanju naše planete. Vaša ideja može biti ključna za pokretanje inspirativnog projekta koji će pozitivno uticati na životnu sredinu. Vaš predlog je dobrodošao i cenjen, jer svaki korak ka održivijoj budućnosti je važan.</p>
             </div>
-            <a href="">Pređi na kontakt stranicu</a>
+            <a href="contact.php">Pređi na kontakt stranicu</a>
         </div>
     </div>
 

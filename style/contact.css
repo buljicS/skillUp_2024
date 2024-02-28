@@ -7,7 +7,7 @@ body {
     height: auto;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
@@ -49,7 +49,7 @@ body {
     background: url(https://img.freepik.com/free-photo/office-desktop-with-laptop-business-man_23-2148174087.jpg?t=st=1708717133~exp=1708720733~hmac=23290080bcb2b04973374230e64ea8bc9088fb91d3317990594d540f2c4db764&w=1380);
     background-repeat: no-repeat;
     justify-content: center;
-    background-size: conver;
+    background-size: cover;
 
 }
 
@@ -57,6 +57,7 @@ body {
     color: white;
     font-family: "Oxygen", sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px;
 }
 
 .kontakt_text p {
@@ -160,10 +161,10 @@ body {
     width: 280px;
 }
 
-input.Poruka {
+textarea{
     border: none;
     outline: none;
-    padding: 5px 450px 200px 10px;
+    padding: 5px 370px 200px 10px;
     border: #000 1px solid;
     border-radius: 10px;
     border: 1px solid #4F6F52;
@@ -248,92 +249,95 @@ footer {
 }
 
 @media screen and (max-width: 959px) {
-.kartice_kontakt{
-    flex-direction: column;
-}
+    .kartice_kontakt {
+        flex-direction: column;
+    }
 
-.kartica{
-    justify-content: center;
-}
+    .kartica {
+        justify-content: center;
+    }
 
-.komentar {
-    background: none;
-}
+    .komentar {
+        background: none;
+    }
 
-.komentar h2 {
-    color: white;
-    text-align: center;
-}
+    .komentar h2 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
 
-.search input {
-    background-color: #4F6F52;
-}
+    .search input {
+        background-color: #4F6F52;
+    }
 
-.searchbar {
-    border: 1px solid white;
-}
+    .searchbar {
+        border: 1px solid white;
+    }
 
-input.Poruka {
-    border: 1px solid white;
-}
+    textarea {
+        border: 1px solid white;
+        padding: 5px 10px;
+        width: 280px;
+    }
 
-.search input {
-    background-color: #739072;
-    color: white;
-}
+    .search input {
+        background-color: #739072;
+        color: white;
+    }
 
-::placeholder {
-    color: white;
-}
+    ::placeholder {
+        color: white;
+    }
 
-input.searchbar {
-     background-color: #4F6F52;
-}
+    input.searchbar {
+        background-color: #4F6F52;
+    }
 
-input.Poruka {
-    background-color: #4F6F52;
-}
+    textarea {
+        background-color: #4F6F52;
+    }
 
-.dugme_posalji {
-    background: #ECE3CE;
-    color: #4F6F52;
-}
+    .dugme_posalji {
+        background: #ECE3CE;
+        color: #4F6F52;
+    }
 
-.dugme_posalji:hover {
-    background: #3A4D39;
-    color: white;
-}
+    .dugme_posalji:hover {
+        background: #3A4D39;
+        color: white;
+    }
 
-footer {
-    align-items: center;
-}
+    footer {
+        align-items: center;
+    }
 
-.slika {
-    padding: 0px;
-}
+    .slika {
+        padding: 0px;
+    }
 
-div.stranicefooter {
-    padding-bottom: 20px;
-}
+    div.stranicefooter {
+        padding-bottom: 20px;
+    }
 
 
-.footerdole {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    border-top: none;
-}
+    .footerdole {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border-top: none;
+    }
 
-.footerdole p {
-    padding-top: 10px;
-    padding-left: 0px;
-    border-top: 1px solid white;
-}
+    .footerdole p {
+        padding-top: 10px;
+        padding-left: 0px;
+        border-top: 1px solid white;
+    }
 
-.stranicefooter {
-    flex-direction: column;
-    padding: 0px;
-}
+    .stranicefooter {
+        flex-direction: column;
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -356,15 +360,15 @@ div.stranicefooter {
 }
 
 @media screen and (max-width: 679px) {
-.upper-header{
-    background: #3A4D39;
-}
-    
-.hamburger{
-    display: flex;
-}
-    
-.nav-header {
-    display: none;
-}
+    .upper-header {
+        background: #3A4D39;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-header {
+        display: none;
+    }
 }

@@ -86,14 +86,15 @@
             <h2>Napiši svoj komentar:</h2>
             <div class="input_komentari">
                 <div class="input_komentar">
-                    <input class="searchbar" type="text" name="fname" placeholder="Vaše ime:" title="Search">
+                    <input class="searchbar" type="text" name="ime" placeholder="Vaše ime:" title="Search">
                     <input class="searchbar" type="text" name="brtelefona" placeholder="Broj telefona:" title="Search">
                 </div>
                 <div class="input_komentar">
                     <input class="searchbar" type="text" name="email" placeholder="Email adresa:" title="Search">
                     <input class="searchbar" type="text" name="tema" placeholder="Tema:" title="Search">
                 </div>
-                <input class="Poruka" type="text" name="poruka" placeholder="Poruka:" title="Search">
+                <textarea name="poruka" placeholder="Poruka:" cols="30" rows="10"></textarea>
+
                 <input type="submit" value="Pošalji" class="dugme_posalji">
             </div>
         </form>
