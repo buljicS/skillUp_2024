@@ -2,6 +2,7 @@
 
 require_once '../conf/config.php';
 
+use Exception as GlobalException;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -64,17 +65,30 @@ function readActiveBlogs(): array
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function sendEmail(): bool
+function sendEmail(array $data): bool
 {
     $mail = new PHPMailer(true);
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host = 'smtp.gmail.com';                             //Set the SMTP server to send through
-    $mail->SMTPAuth = true;                                     //Enable SMTP authentication
-    $mail->Username = 'username';                               //SMTP username
-    $mail->Password = 'yourWebServePassword';                   //SMTP password
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    try {
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+        $mail->isSMTP();                                            //Send using SMTP
+        $mail->Host = 'smtp.gmail.com';                             //Set the SMTP server to send through
+        $mail->SMTPAuth = true;                                     //Enable SMTP authentication
+        $mail->Username = 'stefanbvts@gmail.com';                   //SMTP username
+        $mail->Password = 'wbovuqjkzhxijojq';                       //SMTP password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
+
+        $mail->setFrom('stefanbvts@gmail.com', 'PHP Mailer');
+
+        $mail->isHTML(true);
+        $mail->Subject = $data['tema'];
+        $mail->Body = $data['poruka'];
+        $mail->CharSet = 'UTF-8';
+
+        $mail->send();
+    } catch (Exception $ex) {
+        "Mailer error: {$mail->ErrorInfo}";
+    }
 
     return true;
 }

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Kontakt</title>
 </head>
 
@@ -15,7 +15,7 @@
     <header>
         <div class="upper-header">
             <div class="logo">
-                <img src="img/Logo.png" alt="languages" width="38" height="auto">
+                <img src="./images/Logo.png" alt="languages" width="38" height="auto">
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -27,6 +27,9 @@
                         <rect width="24" height="24" fill="white" />
                     </clipPath>
                 </defs>
+            </svg>
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                <path d="M5.83325 10.2083H10.2083M29.1666 10.2083H16.0416M29.1666 24.7917H24.7916M5.83325 24.7917H18.9583M5.83325 17.5H29.1666" stroke="white" stroke-width="1.5" stroke-linecap="round" />
             </svg>
         </div>
 
@@ -79,18 +82,18 @@
             </div>
         </div>
 
-        <form method="POST" action="./src/contactFormProcess.php" class="komentar">
+        <form method="POST" action="./src/contactUsProcess.php" class="komentar">
             <h2>Napiši svoj komentar:</h2>
             <div class="input_komentari">
                 <div class="input_komentar">
-                    <input class="searchbar" type="text" placeholder="Vaše ime:" title="Search">
-                    <input class="searchbar" type="text" placeholder="Broj telefona:" title="Search">
+                    <input class="searchbar" type="text" name="fname" placeholder="Vaše ime:" title="Search">
+                    <input class="searchbar" type="text" name="brtelefona" placeholder="Broj telefona:" title="Search">
                 </div>
                 <div class="input_komentar">
-                    <input class="searchbar" type="text" placeholder="Email adresa:" title="Search">
-                    <input class="searchbar" type="text" placeholder="Tema:" title="Search">
+                    <input class="searchbar" type="text" name="email" placeholder="Email adresa:" title="Search">
+                    <input class="searchbar" type="text" name="tema" placeholder="Tema:" title="Search">
                 </div>
-                <input class="Poruka" type="text" placeholder="Poruka:" title="Search">
+                <input class="Poruka" type="text" name="poruka" placeholder="Poruka:" title="Search">
                 <input type="submit" value="Pošalji" class="dugme_posalji">
             </div>
         </form>
@@ -108,7 +111,7 @@
                 <a href="#">Kontakt</a>
             </div>
         </div>
-  </footer>
+    </footer>
 
 </body>
 

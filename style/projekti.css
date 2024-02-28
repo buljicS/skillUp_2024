@@ -12,6 +12,10 @@ body {
     height: auto;
   }
   
+.hamburger{
+    display: none;
+}
+
   .nav-header {
     display: flex;
     padding: 10px 50px;
@@ -472,13 +476,25 @@ div.stranicefooter {
 }
     
 @media screen and (max-width: 679px) {
-    .objava img{
-        width: auto;
-        height: auto;
+.upper-header{
+    background: #3A4D39;
+}
+    
+.hamburger{
+    display: flex;
+}
+    
+.nav-header {
+    display: none;
+}  
+
+.objava img{
+    width: auto;
+    height: auto;
  }
     
-    .objava{
-        padding: 0px 0px 50px 0px;
+.objava{
+    padding: 0px 0px 50px 0px;
 }
 }
     

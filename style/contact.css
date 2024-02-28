@@ -7,6 +7,10 @@ body {
     height: auto;
 }
 
+.hamburger{
+    display: none;
+}
+
 .nav-header {
     display: flex;
     padding: 10px 50px;
@@ -349,5 +353,18 @@ div.stranicefooter {
         padding: 5px 10px 200px 10px;
         width: 280px;
     }
+}
 
+@media screen and (max-width: 679px) {
+.upper-header{
+    background: #3A4D39;
+}
+    
+.hamburger{
+    display: flex;
+}
+    
+.nav-header {
+    display: none;
+}
 }

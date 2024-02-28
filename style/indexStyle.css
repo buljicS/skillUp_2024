@@ -9,6 +9,10 @@ body {
 
 /* Header */
 
+.hamburger{
+    display: none;
+}
+
 .nav-header {
     display: flex;
     padding: 10px 50px;
@@ -607,6 +611,18 @@ li span {
 }
     
 @media screen and (max-width: 679px) {
+.upper-header{
+    background: #3A4D39;
+}
+
+.hamburger{
+    display: flex;
+}
+
+.nav-header {
+    display: none;
+}
+
 .objava img{
     width: auto;
     height: auto;

@@ -35,6 +35,10 @@
                     </clipPath>
                 </defs>
             </svg>
+            
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                <path d="M5.83325 10.2083H10.2083M29.1666 10.2083H16.0416M29.1666 24.7917H24.7916M5.83325 24.7917H18.9583M5.83325 17.5H29.1666" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
         </div>
 
         <div class="nav-header">
@@ -133,7 +137,7 @@
     </div>
 
     <footer>
-        <img class="slika" src="img/Logo.png" alt="">
+        <img class="slika" src="./images/Logo.png" alt="">
         <div class="footerdole">
             <p>Copyright@Team3</p>
 
