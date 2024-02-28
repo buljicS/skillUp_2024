@@ -99,7 +99,7 @@
         </section>
     </div>
 
-    <div class="team">
+    <!-- <div class="team">
       <h1 class="title">Tim</h1>
 
       <div id="app" class="container">
@@ -124,7 +124,7 @@
           <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </card>
       </div>
-    </div>
+    </div> -->
 
     <footer>
     <img class="slika" src="assets/site_pics/logo.svg" alt="">
